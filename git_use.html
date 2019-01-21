@@ -17,6 +17,18 @@
 	<!-- 提交到远程 -->
 		<p>git push</p>
 	
+	<h1>git新建分支</h1>
+		<p>git branch develop</p>
+
+	<h1>git切换分支</h1>
+		<p>git checkout develop</p>
+		
+	<h1>git新建并切换分支</h1>
+		<p>git checkout -b release/0.0.1</p>
+
+	<h1>git查看分支</h1>
+		<p>git branch</p>
+
 	<h1>git合并</h1>
 	<!-- 切换到develop分支或者其他分支 -->
 		<p>git checkout develop</p>
@@ -24,6 +36,36 @@
 		<p>git merge release/0.8.0</p>
 
 	<h1>git储藏</h1>
+	<!-- 储藏 -->
+		<p>git stash</p>
+	<!-- 查看储藏 -->
+		<p>git stash list</p>
+	<!-- 切换到最近的储藏继续工作 -->
+		<p>git stash apply</p>
+	<!-- 切换到指定的储藏 -->
+		<p>git stash apply stash@{0}</p>
+	<!-- 移除指定的储藏（不加默认删除最新的）-->
+		<p>git stash drop stash@{0}</p>
+	<!-- 应用储藏并删除储藏（不加默认删除最新的） -->
+		<p>git stash pop stash@{0}</p>
+	<!-- 清除所有储藏 -->
+		<p>git stash clear</p>
+
+	<h1>git提交历史</h1>
+		<p>git log</p>
+
+	<h1>git回退</h1>
+	<!-- 回到上一个版本 -->
+		<p>git reset --hard HEAD^</p>
+	<!-- 回到上上一个版本 -->
+		<p>git reset --hard HEAD^^</p>
+	<!-- 回到上100个版本 -->
+		<p>git reset --hard HEAD~100</p>
+	<!-- 回到指定版本 -->
+		<p>git reset --hard commitID</p>
+
+	<h1>git查看历史命令</h1>
+		<p>git reflog</p>
 </body>
 </html>
 
